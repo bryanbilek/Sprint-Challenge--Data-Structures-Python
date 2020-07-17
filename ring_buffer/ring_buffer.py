@@ -1,9 +1,17 @@
 class RingBuffer:
     def __init__(self, capacity):
-        pass
+        # capacity to check if we need to overwrite the oldest value when appending
+        self.capacity = capacity
+        # storage to hold the items
+        self.storage = []
+        # a specific position tracker in the list for items appended beginning at 0
+        self.index = 0
 
     def append(self, item):
-        pass
+        # check if the items in storage are less than capacity
+        if len(self.storage) == self.capacity:
+            pass
 
     def get(self):
-        pass
+        # to get the list, return the array storing the values
+        return self.storage
