@@ -52,13 +52,18 @@ class BSTNode:
             if self.right:
                 return self.right.contains(target)
             return False
-
+# brought in my bst & defined it. many errors with the invoked value until
+# it said something about ints vs strs so i tried ints & strs til it worked
 b = BSTNode('names')
-
+# for all names in names_1.txt
 for names in names_1:
+    # insert names from names_1.txt into the bst
     b.insert(names)
+# for all names2 in names_2.txt
 for names2 in names_2:
+    # if the bst already contains names2 in it
     if b.contains(names2):
+        # append those names2 into the duplicates array
         duplicates.append(names2)
 
 end_time = time.time()
