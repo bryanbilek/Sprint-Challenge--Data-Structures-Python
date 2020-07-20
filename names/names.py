@@ -54,7 +54,7 @@ class BSTNode:
             return False
 # brought in my bst & defined it. many errors with the invoked value until
 # it said something about ints vs strs so i tried ints & strs til it worked
-b = BSTNode('names')
+b = BSTNode(names_1[0])
 # for all names in names_1.txt
 for names in names_1:
     # insert names from names_1.txt into the bst
